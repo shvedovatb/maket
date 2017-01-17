@@ -156,17 +156,19 @@ nav li a:hover {
 	text-shadow: 1px -1px 0 #fff;
 }
 .wrapper {
-	height: 100%;
+	overflow: hidden;
 	
 }
-
+.wrap-cont{
+	padding: 18px;
+}
 .content{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background: #fff;
 	width: 75%;
-	padding: 18px;
+	
 	float: left;
 	border-radius: 4px 0 0 4px; 
 	color: #595447;
@@ -174,6 +176,10 @@ nav li a:hover {
 	font-size: 14px;
 	line-height: 21px;
 	
+}
+.content, aside{
+	padding-bottom: 99999px;
+  margin-bottom: -99999px;
 }	
 .slider {
 	position: relative;
@@ -348,7 +354,7 @@ aside{
 	font-family: "Arial";
 	font-size: 14px;
 	line-height: 21px;
-	height: 100%;
+	
 }
 aside form {
 	overflow: hidden;
@@ -433,6 +439,7 @@ footer{
 	padding: 24px;
 	height: 100%;
 	border-radius: 0 0 4px 4px;
+	line-height: 21px;
 }
 .info>div{
 	float: left;
@@ -444,18 +451,26 @@ footer{
 }
 .info .links {
 	width: 53%;
+	border-left: 1px solid #d8d6ce;
+	border-right: 1px solid #d8d6ce;		
 }
 .info .links li {
-	display: inline-block;
+	float: left;
 	width: 30%;
+	padding: 0 8px;
 }
 .info .links li a {
 	display: block;
+	color: #757268;
+}
+.info .links li a:hover {
+	text-decoration: underline;
 }
 .info h2 {
 	font-family: "Klavika Medium";
 	color: #64522a;
 	font-size: 14pt;
+	padding-bottom: 5px;
 }
 .copy {
 	text-align: center;
@@ -463,6 +478,7 @@ footer{
 	font-size: 12px;
 	line-height: 18px;
 	margin: 20px 0 75px;
+	height: 120px;
 }
 .copy span {
 
